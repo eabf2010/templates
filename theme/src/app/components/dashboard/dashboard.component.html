@@ -1,0 +1,304 @@
+<div class="container-fluid pad-right">
+
+  <div class="row">
+    <div class="col-md-9">
+      <div class="row">
+
+        <div class="col-md-3 ">
+            <div class="card w-60 card-dark">
+              <div class="card-header header-card">
+                <i class="fa fa-line-chart"></i>
+              </div>
+              <div class="card-body body-card">
+                38 <small class="small">TASK</small>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 ">
+            <div class="card w-60 card-dark">
+              <div class="card-header header-card">
+                <i class="fa fa-pencil-square-o"></i>
+              </div>
+              <div class="card-body body-card">
+                59 <small class="small">MAKING</small>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 ">
+            <div class="card w-60 card-dark">
+              <div class="card-header header-card">
+                <i class="fa fa-check-circle-o"></i>
+              </div>
+              <div class="card-body body-card">
+                38 <small class="small">COMPLETE</small>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 ">
+            <div class="card w-60 card-dark">
+              <div class="card-header header-card">
+                <i class="fa fa-file-image-o"></i>
+              </div>
+              <div class="card-body body-card">
+                43 <small class="small">NEXT</small>
+              </div>
+            </div>
+        </div>
+      </div><!--cierre row-->
+
+      <br>
+      <!--Graficos-->
+      <div class="row">
+        <div class="col-md-4">
+            <div class="card w-60 card-dark">
+              <span class="label-data">ANALYSIS</span>
+              <div class="card-header header-card">
+                <div style="display: block">
+                  <canvas baseChart width="600" height="800"
+                          [data]="doughnutChartData"
+                          [labels]="doughnutChartLabels"
+                          [colors]="doughnutChartColors"
+                          [chartType]="doughnutChartType"
+                          (chartHover)="chartHovered($event)"
+                          (chartClick)="chartClicked($event)">
+                  </canvas>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="card w-60 card-dark">
+              <span class="label-data">STATISTICS</span>
+              <div class="card-header header-card">
+                <div style="display: block;">
+                <canvas baseChart width="600" height="352"
+                            [datasets]="lineChartData"
+                            [labels]="lineChartLabels"
+                            [options]="lineChartOptions"
+                            [colors]="lineChartColors"
+                            [legend]="lineChartLegend"
+                            [chartType]="lineChartType"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <br>
+
+    <div class="row">
+      <div class="col-md-8">
+          <div class="card w-60 card-dark">
+            <span class="label-data">UX & UI ANALYSIS</span>
+            <div class="card-header header-card">
+                <div style="display: block">
+                  <canvas baseChart width="600" height="350"
+                          [datasets]="barChartData"
+                          [labels]="barChartLabels"
+                          [options]="barChartOptions"
+                          [colors]="barChartColors"
+                          [legend]="barChartLegend"
+                          [chartType]="barChartType"
+                          (chartHover)="chartHovered($event)"
+                          (chartClick)="chartClicked($event)"></canvas>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-md-4">
+          <div class="card w-60 card-dark">
+            <span class="label-data">RADAR CHART</span>
+            <div class="card-header header-card">
+              <div style="display: block">
+                <canvas baseChart width="600" height="800"
+                        [datasets]="radarChartData"
+                        [labels]="radarChartLabels"
+                        [colors]="radarChartColor"
+                        [chartType]="radarChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-6">
+          <div class="card w-60 card-dark">
+            <span class="label-data">POLAR CHART</span>
+            <div class="card-header header-card">
+              <div style="display: block">
+                <canvas baseChart width="600" height="350"
+                        [data]="polarAreaChartData"
+                        [labels]="polarAreaChartLabels"
+                        [colors]="polarAreaChartColors"
+                        [legend]="polarAreaLegend"
+                        [chartType]="polarAreaChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-md-6">
+          <div class="card w-60 card-dark">
+            <span class="label-data">LINE CHART</span>
+            <div class="card-header header-card">
+              <div style="display: block">
+                  <canvas baseChart width="600" height="352"
+                            [datasets]="linePointChartData"
+                            [labels]="linePointChartLabels"
+                            [options]="linePointChartOptions"
+                            [colors]="linePointChartColors"
+                            [legend]="linePointChartLegend"
+                            [chartType]="linePointChartType"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)"></canvas>
+
+                </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-5">
+          <div class="card w-60 card-dark">
+            <span class="label-data">SCATTER DIAGRAM</span>
+            <div class="card-header header-card">
+              <div style="display: block">
+                  <canvas baseChart width="600" height="600"
+                            [datasets]="pointChartData"
+                            [labels]="pointChartLabels"
+                            [options]="pointChartOptions"
+                            [colors]="pointChartColors"
+                            [legend]="pointChartLegend"
+                            [chartType]="pointChartType"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)"></canvas>
+
+                </div>
+            </div>
+          </div>           
+        </div>
+
+      <div class="col-md-7">
+          <div class="card w-60 card-dark">
+            <span class="label-data">PIE CHART</span>
+            <div class="card-header header-card">
+              <div style="display: block">
+                <canvas baseChart width="600" height="405"
+                        [data]="pieChartData"
+                        [labels]="pieChartLabels"
+                        [colors]="pieChartColors"
+                        [chartType]="pieChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+    <br>
+
+
+    </div><!--cierre col 10-->
+
+    <div class="col-md-3 pan-right">
+      <i class="fa fa-users icon-purple" aria-hidden="true"></i>
+      <hr class="line-purple">
+
+      <div class="table-responsive-lg">
+        <table class="table table-hover">
+          <tbody class="info">
+            <tr >
+              <td>
+                <img class="img-rnd-nav" 
+                     src="assets/img/danielle.jpg" alt="User">
+              </td>
+              <td>
+                Danielle says hi!
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="img-rnd-nav" 
+                     src="assets/img/Velazquez.jpg" alt="User">
+              </td>
+              <td>
+                Velazquez has a news for you
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="img-rnd-nav" 
+                     src="assets/img/alice.jpg" alt="User">
+              </td>
+              <td>
+                Brith we gotta something new to show our friends
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="img-rnd-nav" 
+                     src="assets/img/joyce.jpg" alt="User">
+              </td>
+              <td>
+                Hello Alex I need talk to you
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="img-rnd-nav" 
+                     src="assets/img/Nora.jpg" alt="User">
+              </td>
+              <td>
+                Angular's 6 is comming. Good news
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="img-rnd-nav" 
+                     src="assets/img/carl.jpg" alt="User">
+              </td>
+              <td>
+                Yesterday I met our new boss, He's so nice. 
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="img-rnd-nav" 
+                     src="assets/img/Nancy.jpg" alt="User">
+              </td>
+              <td>
+                Nancy sent you a file. 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div><!--cierre row general-->
+
+
+</div>

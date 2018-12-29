@@ -1,0 +1,84 @@
+.card-dark{
+	border-radius: 4px solid #1e1f23;
+	text-align: center;
+	background-color: #25262a;
+	color: #FFF;
+}
+
+.header-card{
+	background-color: #1e1f23;
+	color: #FFF;
+	font-size: 50px;
+}
+
+.body-card{
+	color: #FFF;
+	font-size: 46px;
+	font-weight: lighter;
+    font-family: 'Oswald', sans-serif;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.small{
+	font-size: 16px;
+	color:#95989b;
+	vertical-align: middle;
+	font-weight: lighter;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.label-data{
+	color: #95989b;
+	font-size: 18px;
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 20px;
+	background-color: #1e1f23;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+.pan-right{
+	top:-20px;
+	text-align: center;
+	background-color: #1e1f23;
+	color: #95989b;
+	padding-top: 20px;
+}
+
+.line-purple{
+	background-color: #4d418b;
+	height: 1.2px;
+}
+
+.icon-purple{
+	font-size: 24px;
+	color: #4d418b;
+}
+
+.img-rnd-nav{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.info{
+   text-align: left;
+   vertical-align: middle;
+   font-size: 15px;
+   font-weight: 400;
+   
+   font-family: 'Open Sans', sans-serif;
+
+}
+
+.user-info{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #000;
+}

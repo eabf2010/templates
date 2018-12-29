@@ -1,0 +1,241 @@
+
+
+/****************************************Nabvar********************************************/
+
+input[type=text] {
+	border: 1px solid #57595f;
+	background: #202226;
+	border-radius: 40px;
+	width: 40%;
+	height: 50px;
+}
+
+input[type=text]:focus{
+	border: 1px solid #6c6e76;
+    box-shadow: 1px 1px 1px 0 #6c6e76;
+    color: #6c6e76;
+}
+
+
+.search-input .fa, .active-cyan-2 .fa {
+    color: #57595f;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  color:#FFF;
+  border-radius: 25px;
+  background: #6256a9;
+}
+
+.btn-circle.btn-lg:hover {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  color:#FFF;
+  border-radius: 25px;
+  background: #02b5ce;
+}
+
+.btn-circle.btn-lg:focus {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  color:#FFF;
+  border-radius: 25px;
+  background: #02b5ce;
+}
+
+.user{
+	color:#c6c6c8;
+	font-size: 14px;
+	font-weight: lighter;
+	font-family: 'Oswald', sans-serif;
+}
+
+.status{
+	color:#95989b;
+	font-size: 14px;
+	font-weight: 100px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.search{
+  padding: 20px 70px;
+
+}
+
+#search{
+  width: 60%;
+}
+
+.logo{
+  padding: 15px 60px;
+}
+
+.logo-menu{
+  padding: 0px 30px;
+}
+
+.badge-warning{
+  color: #FFF;
+  background-color: #4d418b;
+}
+
+.badge-success{
+  color: #FFF;
+  background-color: #04aec7;
+}
+
+
+
+
+/****************************************Menu************************************************/
+
+ /* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 123px;
+    left: 0px;
+    background-color: #202226;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px 0 0 0 ;
+    height: 550px;
+    width: 200px;
+    background: #202226;
+      
+}
+
+.text-item{
+    color:#95989b;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.menunav{
+    color: #fff;
+}
+
+.boton-menu{
+    height: 80px;
+}
+
+
+.img-rnd{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.img-rnd-nav{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.own-btn-dark{
+    color: #c5c5c5;
+    font-size: 30px;
+}
+
+.top-nav{
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.sep-bet{
+  margin-left: 10px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    
+} 
+
+@media screen and (max-width: 480px) {
+    .search-data{
+      color:#02b4ce;
+      width: 500px;
+    }
+
+    .top-menu{
+      right: 40px;
+      width: 1000%;
+      
+    }
+
+    .top-nav{
+      top: 2px;
+      padding-bottom: 20px;
+      padding-left: 80px;
+    }
+
+    .sep-bet{
+      margin-left: 4px;
+      font-size: 12px;
+    }
+
+
+    .badge-status {
+      display: inline-block;
+      top:205px;
+      position: absolute;
+    }
+
+    .badge-status:after {
+        position: absolute;
+        left: 0;
+        top:0;
+    }
+
+
+
+
+
+
+}
+
+
+.badge-success-new{
+  background-color: #02b4ce;
+  color: #FFF;
+}

@@ -1,0 +1,32 @@
+.contenedor{
+	max-width: 80%; 
+	margin: 120px auto;
+}
+
+.logo{
+	max-width: 16%;
+	padding: 0px 0px 0px 0px;
+}
+
+.logo-smll{
+	max-width: 100%;
+	padding: 0px 0px 0px 0px
+}
+
+.logo-2{
+	width: 100%;
+	vertical-align: middle;
+}
+
+.text-white{
+	color: #FFF;
+}
+
+.tabs-back{
+	background: #07203c;
+}
+
+.typography-line{
+	color:#FFF;
+}
+
